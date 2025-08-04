@@ -1,0 +1,20 @@
+{
+	"name": "SourceDataset_o2g",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SalesOrders.txt",
+				"folderPath": "output",
+				"container": "dataengineeringsolutions"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
